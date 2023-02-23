@@ -1,0 +1,177 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px
+  }
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f75be;
+    color: #ffffff;
+    height: 80px;
+  }
+  
+  #logo {
+    margin-right: 1rem;
+  }
+  
+  #logo img {
+    height: 60px;
+  }
+  
+  #nombre-universidad {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  #nombre-app {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+  
+  /* Estilos para el menú de navegación */
+  nav {
+    background-color: #E5E5E5;
+    border-bottom: 1px solid #C9C9C9;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: #163C80;
+    color: #FFFFFF;
+  }
+  
+  /* Contenido principal */
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    flex: 1 0 auto;
+    margin-bottom: 50px;
+  }
+  
+  #datos-curso {
+    grid-column: 1 / -1;
+    background-color: #E5E5E5;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #docente img {
+    max-width: 30%;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  #curso {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: auto;
+  }
+  
+  #mosaico {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 20%;
+  }
+  
+  .tarjeta {
+    border: 1px solid #C9C9C9;
+    padding: 10px;
+  }
+  
+  .tarjeta .imagen {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .tarjeta .imagen img {
+    max-width: 60%;
+    height: auto;
+  }
+  
+  .tarjeta h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  #formulario {
+    grid-column: 1 / -1;
+    background-color: #E5E5E5;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 80px;
+  }
+  
+  #formulario label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  #formulario input[type="date"],
+  #formulario input[type="text"],
+  #formulario input[type="submit"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    background-color: #FFFFFF;
+    color: #666;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  #formulario input[type="submit"] {
+    background-color: #163C80;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  footer {
+    margin-top: auto;
+    background-color: #0c2340;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+  }
